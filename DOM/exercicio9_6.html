@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - JavaScript</title>
+    <style>
+        body {
+            background-color: blue;
+            color: yellowgreen;
+            font: normal 18pt Arial;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Entendendo o DOM</h1>
+    <p>Postando aqui os resultados</p>
+    <p>Aprendendo a Usar o <strong>DOM</strong> em JavaScript</p>
+    <div class="msg">Clique aqui!!!</div>
+
+    <script>
+
+        var d = window.document.getElementsByClassName('msg')[0]
+        d.style.background = 'black'
+        d.style.color = 'red'
+        d.innerText = 'Estou aguardando. . .'
+
+    </script>
+</body>
+
+</html>

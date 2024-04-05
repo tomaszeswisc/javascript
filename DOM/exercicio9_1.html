@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - JavaScript</title>
+    <style>
+        body {
+            background-color: blue;
+            color: yellowgreen;
+            font: normal 18pt Arial;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Entendendo o DOM</h1>
+    <p>Postando aqui os resultados</p>
+    <p>Aprendendo a Usar o <strong>DOM</strong> em JavaScript</p>
+    <div>Clique aqui!!!</div>
+
+    <script>
+
+        var p1 = window.document.getElementsByTagName('p')[1]
+        window.document.write('Esse é o texto: ' + p1.innerHTML)
+        p1.style.background = 'black'
+
+    </script>
+</body>
+
+</html>
