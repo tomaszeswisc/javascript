@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo</title>
+    <style>
+        Body {
+            background-color: blue;
+            font-size: large 20pt;
+            text-align: center;
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Atividades JavaScript</h1>
+    <p>Exemplo de Exercícios no Navegador</p>
+    
+    <script>
+        window.alert('Cálculo do Salário Mensal e Diario')
+        var valorHora = Number(prompt('Digite o Valor da hora Trabalhada:'))
+        var horasTrabalhadas = Number(prompt('Digite a quantidade de horas Trabalhadas:'))
+        var salarioMensal = (valorHora * horasTrabalhadas) * 30
+        var salarioDiaria = valorHora * horasTrabalhadas
+        document.write('O valor do salario mensal é: ' + salarioMensal)
+        document.write(' O valor da diaria é: ' + salarioDiaria)
+    </script>
+</body>
+</html>
