@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            font: normal 18pt Arial;
+        }
+        input {
+            font: normal 18pt Arial;
+            width: 280px;
+        }
+        div.resultado {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <span>n1</span>
+    <input type="number" name="txtn1" id="txtn1">
+    <br>
+    <input type="button" value="Calcular Quadrado" onclick="calcularQuadrado()">
+    <br>
+    <input type="button" value="Calcular Cubo" onclick="calcularCubo()">
+    <br>
+    <input type="button" value="Calcular Raiz Quadrada" onclick="calcularRaizQuadrada()">
+    <br>
+    <span>n2</span>
+    <input type="number" name="txtn2" id="txtn2">
+    <br>
+        <input type="button" value="somar" onclick="somar()">
+    <input type="button" value="subtrair" onclick="subtrair()">
+    <br>
+    <input type="button" value="multiplicar" onclick="multiplicar()">
+    <input type="button" value="dividir" onclick="dividir()">
+    <br>
+
+    <div id="res" class="resultado">Resultado</div>
+
+    <script>
+        // Variáveis globais
+        var num1
+        var num2
+
+        function calcularQuadrado(){
+            num1 = Number(document.getElementById('txtn1').value)
+            var resultado = num1 * num1
+            document.getElementById('res').innerHTML = `O quadrado de ${num1} é: <strong>${resultado}</strong>`
+        }
+
+        function calcularCubo(){
+            num1 = Number(document.getElementById('txtn1').value)
+            var resultado = num1 * num1 * num1
+            document.getElementById('res').innerHTML = `O cubo de ${num1} é: <strong>${resultado}</strong>`
+        }
+
+        function calcularRaizQuadrada(){
+            num1 = Number(document.getElementById('txtn1').value)
+            var resultado = Math.sqrt(num1)
+            document.getElementById('res').innerHTML = `A raiz quadrada de ${num1} é: <strong>${resultado}</strong>`
+        }
+
+        function somar(){
+            num1 = Number(document.getElementById('txtn1').value)
+            num2 = Number(document.getElementById('txtn2').value)
+            var resultado = num1 + num2
+            document.getElementById('res').innerHTML = `O resultado da soma é: <strong>${resultado}</strong>`
+        }
+
+        function subtrair(){
+            num1 = Number(document.getElementById('txtn1').value)
+            num2 = Number(document.getElementById('txtn2').value)
+            var resultado = num1 - num2;
+            document.getElementById('res').innerHTML = `O resultado da subtração é: <strong>${resultado}</strong>`
+        }
+
+        function multiplicar(){
+            num1 = Number(document.getElementById('txtn1').value)
+            num2 = Number(document.getElementById('txtn2').value)
+            var resultado = num1 * num2
+            document.getElementById('res').innerHTML = `O resultado da multiplicação é: <strong>${resultado}</strong>`
+        }
+
+        function dividir(){
+            num1 = Number(document.getElementById('txtn1').value)
+            num2 = Number(document.getElementById('txtn2').value)
+            var resultado = num1 / num2
+            document.getElementById('res').innerHTML = `O resultado da divisão é: <strong>${resultado}</strong>`
+        }
+    </script>
+</body>
+</html>
