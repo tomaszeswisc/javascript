@@ -6,22 +6,22 @@
     <title>Saudações Animadas</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <h1>Título</h1>
+<body onload="carregar()"> <!--assim que carregar o site, ele carrega a função-->
+    <header class="texto">
+        <h1>Hora do Dia</h1>
     </header>
     
     <section>
-        <div>
-            testando
+        <div id="msg">
+            Mostrar a hora
         </div>
 
-        <div>
-            testando
+        <div id="foto">
+            <img id="imagem" src="foto.png" alt="Foto do dia">
         </div>
     </section>
 
-    <footer>
+    <footer class="texto">
        <p>&copy VS Code Corporation</p>
     </footer>
 
